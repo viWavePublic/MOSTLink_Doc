@@ -1,11 +1,10 @@
-
 #include <DHT.h>
 #include "MOSTLora.h"
-#define DHT11_PIN 2
+#define DHT_PIN 2
 
 const char *THINKSPEAK_WRITE_API_KEY = "YOUR_THINGSPEAK_WRITE_API_KEY";
 
-DHT dht(DHT11_PIN, DHT11);
+DHT dht(DHT_PIN, DHT11);
 MOSTLora lora;
 
 void setup() {
